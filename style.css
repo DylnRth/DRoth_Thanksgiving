@@ -8,9 +8,23 @@ body {
 .event-banner {
   background-color: #fdf8f2;
   min-height: 85vh;
+  display: flex;
+}
+
+.event-banner .container-fluid,
+.event-banner .row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .event-details {
+  flex: 1 1 58%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 4rem 3rem 4rem 4.25rem;
 }
 
@@ -44,6 +58,7 @@ body {
 }
 
 .event-photo-wrapper {
+  flex: 1 1 42%;
   min-height: 450px;
 }
 
@@ -52,4 +67,25 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .event-banner {
+    min-height: auto;
+  }
+
+  .event-banner .row {
+    flex-direction: column;
+  }
+
+  .event-details {
+    flex: none;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .event-photo-wrapper {
+    flex: none;
+    min-height: 280px;
+    max-height: 350px;
+  }
 }
