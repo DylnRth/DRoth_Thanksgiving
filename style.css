@@ -60,11 +60,12 @@ body {
 .event-photo-wrapper {
   flex: 1 1 35%;
   max-height: 550px;
+  overflow: hidden;
 }
 
 .event-photo {
   height: 100vh;
-  width: auto;
+  width: 100%;
   object-fit: cover;
   display: block;
 }
