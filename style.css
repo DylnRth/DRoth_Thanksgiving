@@ -5,6 +5,10 @@ body {
   margin: 0;
 }
 
+.navColor {
+  background-color: #2c1e16;
+}
+
 .event-banner {
   background-color: #fdf8f2;
   min-height: 65vh;
