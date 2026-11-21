@@ -23,6 +23,24 @@ body {
   background-position: center;
 }
 
+/* Preloads the hover frames on page load so there is zero flash on first hover */
+.navbar-brand .navLogo::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -999;
+  background-image:
+    url('img/turkey_table_7deg.svg'),
+    url('img/turkey_table_14deg.svg'),
+    url('img/turkey_table_21deg.svg');
+}
+
+.navbar-brand:hover .navLogo {
+  animation: logoCycle 3s forwards;
+}
+
 .navbar-brand:hover .navLogo {
   animation: logoCycle 0.75s forwards;
 }
