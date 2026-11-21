@@ -24,7 +24,7 @@ body {
 }
 
 .navbar-brand:hover .navLogo {
-  animation: logoCycle 3s forwards;
+  animation: logoCycle 2s forwards;
 }
 
 @keyframes logoCycle {
@@ -38,19 +38,16 @@ body {
     background-image: url('img/turkey_table_14deg.svg');
   }
   42.86%, 55% {
-    background-image: url('img/logo4.svg');
+    background-image: url('img/turkey_table_21deg.svg');
   }
   57.14%, 69% {
-    background-image: url('img/logo5.svg');
+    background-image: url('img/turkey_table_14deg.svg');
   }
   71.43%, 83% {
-    background-image: url('img/logo6.svg');
+    background-image: url('img/turkey_table_7deg.svg');
   }
-  85.71%, 98% {
-    background-image: url('img/logo7.svg');
-  }
-  100% {
-    background-image: url('img/logo1.svg');
+  85.71%, 100% {
+    background-image: url('img/turkey_table\ \(1\).svg');
   }
 }
 
