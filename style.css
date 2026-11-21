@@ -7,15 +7,45 @@ body {
 
 .navColor {
   background-color: #2c1e16;
+  padding: 0.75rem 2rem;
+  height: 80px;
   display: flex;
+  align-items: center;
 }
 
-.navLogo {
-  height: 45px;
-  width: auto;
-  max-width: 150px;
+.navbar-brand .navLogo {
   display: block;
+  width: 150px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  /* Runs the animation every 6 seconds on an infinite loop */
+  animation: logoCycle 6s infinite;
 }
+
+/* Optional: pauses the cycle when someone hovers over the logo */
+.navbar-brand:hover .navLogo {
+  animation-play-state: paused;
+}
+
+@keyframes logoCycle {
+  0%, 30% {
+    background-image: url('img/logo1.svg');
+  }
+  33%, 63% {
+    background-image: url('img/logo2.svg');
+  }
+  66%, 96% {
+    background-image: url('img/logo3.svg');
+  }
+  100% {
+    background-image: url('img/logo1.svg');
+  }
+}
+
+
 
 .event-banner {
   background-color: #fdf8f2;
