@@ -7,11 +7,14 @@ body {
 
 .navColor {
   background-color: #2c1e16;
+  display: flex;
 }
 
 .navLogo {
-  width: 4rem;
-  height: auto;
+  height: 45px;
+  width: auto;
+  max-width: 150px;
+  display: block;
 }
 
 .event-banner {
