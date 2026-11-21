@@ -17,31 +17,28 @@ body {
   display: block;
   width: 150px;
   height: 60px;
+  background-image: url('img/turkey_table\ \(1\).svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  
-  /* Runs the animation every 6 seconds on an infinite loop */
-  animation: logoCycle 6s infinite;
 }
 
-/* Optional: pauses the cycle when someone hovers over the logo */
 .navbar-brand:hover .navLogo {
-  animation-play-state: paused;
+  animation: logoCycle 3s forwards;
 }
 
 @keyframes logoCycle {
   0%, 30% {
-    background-image: url('img/logo1.svg');
+    background-image: url('img/turkey_table\ \(1\).svg');
   }
   33%, 63% {
-    background-image: url('img/logo2.svg');
+    background-image: url('img/turkey_table_7deg.svg');
   }
   66%, 96% {
-    background-image: url('img/logo3.svg');
+    background-image: url('img/turkey_table_14deg.svg');
   }
   100% {
-    background-image: url('img/logo1.svg');
+    background-image: url('img/turkey_table_21deg.svg');
   }
 }
 
