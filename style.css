@@ -24,7 +24,7 @@ body {
 }
 
 .navbar-brand:hover .navLogo {
-  animation: logoCycle 1s forwards;
+  animation: logoCycle 0.75s forwards;
 }
 
 @keyframes logoCycle {
