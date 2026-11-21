@@ -28,22 +28,22 @@ body {
 }
 
 @keyframes logoCycle {
-  0%, 12% {
+  0%, 14.28% {
     background-image: url('img/turkey_table\ \(1\).svg');
   }
-  14.29%, 26% {
+  14.29%, 28.56% {
     background-image: url('img/turkey_table_7deg.svg');
   }
-  28.57%, 40% {
+  28.57%, 42.85% {
     background-image: url('img/turkey_table_14deg.svg');
   }
-  42.86%, 55% {
+  42.86%, 57.13% {
     background-image: url('img/turkey_table_21deg.svg');
   }
-  57.14%, 69% {
+  57.14%, 71.42% {
     background-image: url('img/turkey_table_14deg.svg');
   }
-  71.43%, 83% {
+  71.43%,85.70% {
     background-image: url('img/turkey_table_7deg.svg');
   }
   85.71%, 100% {
